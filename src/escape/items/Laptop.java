@@ -10,6 +10,16 @@ public class Laptop extends DefaultItem{
 	}
 	
 	@Override
+	public void close(){
+		InteractionManager.say("You can't see how closing the laptop would help you");
+	}
+	
+	@Override
+	public void open(){
+		InteractionManager.say("It's already open");
+	}
+	
+	@Override
 	public void use(){
 		lookAt();
 	}
