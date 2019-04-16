@@ -1,5 +1,6 @@
 package escape.rooms;
 
+import escape.items.BookCase;
 import escape.items.DogBowl;
 import escape.items.Hatch;
 import escape.items.Laptop;
@@ -13,6 +14,7 @@ public class Basement extends DefaultRoom{
 		items.add(new Hatch());
 		items.add(new WoodenBox());
 		items.add(new DogBowl());
+		items.add(new BookCase());
 	}
 	
 }

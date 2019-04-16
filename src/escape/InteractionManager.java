@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import escape.items.Item;
 import escape.rooms.Basement;
+import escape.rooms.Lab;
 import escape.rooms.Room;
 
 public class InteractionManager{
@@ -18,6 +19,7 @@ public class InteractionManager{
 	
 	public static void initialise(){
 		rooms.add(new Basement());
+		rooms.add(new Lab());
 		current_room = rooms.get(0);
 		current_room.describeRoom();
 		say("");
@@ -245,5 +247,9 @@ public class InteractionManager{
 			}
 		}
 		return null;
+	}
+	
+	public static void switchRoom(String name){
+		current_room = findRoom(name);
 	}
 }
