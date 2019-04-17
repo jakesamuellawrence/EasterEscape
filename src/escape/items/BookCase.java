@@ -17,26 +17,26 @@ public class BookCase extends DefaultItem{
 	public void lookAt(){
 		InteractionManager.say("It's a set of shelves built into the wall, lined with books, dvds, and TV Show boxsets. Looking along the "
 							 + "shelves you see the following titles:");
-		InteractionManager.say("1) Whiplash");
-		InteractionManager.say("2) In His Steps: What Would Jesus Do?");
-		InteractionManager.say("3) The Cat in the hat");
-		InteractionManager.say("4) The Battle of Algiers");
-		InteractionManager.say("5) Amores Perros");
-		InteractionManager.say("6) Norwegian Wood");
-		InteractionManager.say("7) Lock, Stock and Two Smoking Barrels");
-		InteractionManager.say("8) The Catcher in the Rye");
-		InteractionManager.say("9) Judgment at Nuremburg");
-		InteractionManager.say("10) Back to the Future Trilogy");
-		InteractionManager.say("11) Inglorious Basterds");
-		InteractionManager.say("12) There Will Be Blood");
-		InteractionManager.say("13) Twelve Monkeys");
-		InteractionManager.say("14) WALL.E");
-		InteractionManager.say("15) The General");
-		InteractionManager.say("16) House boxset");
-		InteractionManager.say("17) Yu Dan's Insights on the Analects of Confucius");
-		InteractionManager.say("18) The Great Escape");
-		InteractionManager.say("19) Ben-Hur");
-		InteractionManager.say("20) The Night of the Hunter");
+		InteractionManager.say("Whiplash");
+		InteractionManager.say("In His Steps: What Would Jesus Do?");
+		InteractionManager.say("The Cat in the hat");
+		InteractionManager.say("The Battle of Algiers");
+		InteractionManager.say("Amores Perros");
+		InteractionManager.say("Norwegian Wood");
+		InteractionManager.say("Lock, Stock and Two Smoking Barrels");
+		InteractionManager.say("The Catcher in the Rye");
+		InteractionManager.say("Judgment at Nuremburg");
+		InteractionManager.say("Back to the Future Trilogy");
+		InteractionManager.say("Inglorious Basterds");
+		InteractionManager.say("There Will Be Blood");
+		InteractionManager.say("Twelve Monkeys");
+		InteractionManager.say("WALL.E");
+		InteractionManager.say("The General");
+		InteractionManager.say("House boxset");
+		InteractionManager.say("Yu Dan's Insights on the Analects of Confucius");
+		InteractionManager.say("The Great Escape");
+		InteractionManager.say("Ben-Hur");
+		InteractionManager.say("The Night of the Hunter");
 		if(!solved){
 			InteractionManager.say("");
 			String choice = InteractionManager.ask("Would you like to take one of them off the shelf to get a better look?");
@@ -51,7 +51,7 @@ public class BookCase extends DefaultItem{
 	public void use(){
 		if(!solved){
 			String book = InteractionManager.ask("Which title on the shelves would you like to take?");
-			if(book.equals("10") || book.toLowerCase().contains("back to the future")){
+			if(book.toLowerCase().contains("back to the future")){
 				solved = true;
 				InteractionManager.say("You slide the Back to The Future boxset out of the shelf, and hear a click. The entire bookcase begins "
 									 + "to rotate, taking you with it, until eventually you find yourself in a new room entirely.");

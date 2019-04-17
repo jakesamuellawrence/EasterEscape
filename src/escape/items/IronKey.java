@@ -6,7 +6,7 @@ public class IronKey extends DefaultItem{
 
 	public IronKey(){
 		name = "iron key";
-		description = "a large IRON KEY, sitting in an open SAFE.";
+		description = "a large IRON KEY, sitting in an open safe.";
 	}
 	
 	@Override
