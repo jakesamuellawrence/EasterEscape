@@ -19,5 +19,17 @@ public class ConduitDamper extends DefaultItem{
 			InteractionManager.say("The machine is still and silent. You figure it's probably been switched off");
 		}
 	}
+	
+	@Override
+	public void useWith(Item item){
+		if(item instanceof Hammer){
+			InteractionManager.say("You swing your hammer into the conduit damper, which begins to groan and creak, sparks flying everywhere. "
+								 + "You expected it to slow down after you smashed it, but it gets faster and faster an faster, something inside "
+								 + "clearly very broken. More and more sparks fly, before eventually you see an brilliant green flash and feel "
+								 + "a shockwave blast through you. You shield your eyes from the flash, and when you open them again you find "
+								 + "yourself stadning in front of the fully-functional conduit damper, hammer in hand, and feeling a strange "
+								 + "sense of deja vu.");
+		}
+	}
 
 }

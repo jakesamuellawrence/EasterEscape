@@ -51,8 +51,22 @@ public class Switch extends DefaultItem{
 	@Override
 	public void useWith(Item item){
 		if(item instanceof Hammer){
-			InteractionManager.say("You slam the hammer into the protective casing, throwing glass everywhere. You can reach the switch now :)");
-			open = true;
+			if(!open){
+				InteractionManager.say("You slam the hammer into the protective casing, throwing glass everywhere. You can reach the switch now :)");
+				open = true;
+			}
+			else{
+				InteractionManager.say("You've already smashed the casing to pieces, what more good could a hammer do?");
+			}
+		}
+		else if(item instanceof IronKey){
+			if(!open){
+				InteractionManager.say("You try the iron key in the keyhole of the glass casing, but quickly realise it's about 5 times bigger "
+									 + "than the keyhole is");
+			}
+			else{
+				InteractionManager.say("You've already smashed the casing, what more good is a key going to do?");
+			}
 		}
 		else{
 			super.useWith(item);

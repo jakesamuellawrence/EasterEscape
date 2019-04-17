@@ -34,6 +34,10 @@ public class InteractionManager{
 	public static void removeItemFromInventory(Item item){
 		inventory.remove(item);
 	}
+	
+	public static void removeItemFromInventory(String name){
+		removeItemFromInventory(findInventoryItemByName(name));
+	}
 
 	public static Item findInventoryItemByName(String target_name){
 		for(int i = 0; i < inventory.size(); i++){
@@ -64,7 +68,7 @@ public class InteractionManager{
 		else if(command_words[0].equals("use")){
 			handleUseCommand(command_words);
 		}
-		else if(command_words[0].equals("pick")){
+		else if(command_words[0].equals("pick") || command_words[0].equals("take")){
 			handlePickUpCommand(command_words);
 		}
 		else if(command_words[0].equals("open")){

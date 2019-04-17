@@ -62,6 +62,8 @@ public class BookCase extends DefaultItem{
 									 + "whirring machine labelled 'Conduit Damper'. To the far side of the machine is a switch, encased in "
 									 + "a protective cover, and even further along the counter is a large pile of tools. Embedded into the far "
 									 + "wall is a safe.");
+				InteractionManager.say("");
+				InteractionManager.say("(In future simply say 'use bookcase' to switch between the rooms)");
 			}
 			else{
 				InteractionManager.say("You try to slide it out, but it won't even budge at all");

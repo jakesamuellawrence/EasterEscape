@@ -24,7 +24,7 @@ public class Tools extends DefaultItem{
 	@Override
 	public void pickUp(){
 		InteractionManager.say("You can't possibly fit all of the tools in your pocket. You'll probably need to look through them all "
-							 + "and just choose one.");
+							 + "and just choose one. (Besides, you wouldn't even know how to use them)");
 	}
 	
 }

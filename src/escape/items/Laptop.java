@@ -93,7 +93,7 @@ public class Laptop extends DefaultItem{
 			InteractionManager.say("SUBJECT: RE: Strange box...");
 			InteractionManager.say("Okay so I've run some tests and the results are... weird????? "
 								 + "I was right, it does seem to be emitting some kind of energy pulse, which is fucking ridiculous "
-								 + "in and of itself. (how was an acient civilisation able to build something like this?) "
+								 + "in and of itself. (how was an ancient civilisation able to build something like this?) "
 								 + "But it get's weirder. It's completely unlike any other energy signature I've ever seen "
 								 + "before. We seriously need to get those tablets translated, and soon. I've found a way to "
 								 + "dampen the energy pulses for now, just in case they're dangerous. I wanna find out more about "
@@ -104,7 +104,7 @@ public class Laptop extends DefaultItem{
 								 + "then displays the following emails: ");
 			InteractionManager.say("FROM: david.brickson@archeon.org");
 			InteractionManager.say("SUBJECT: Finally translated those runes");
-			InteractionManager.say("Alright so I'm pretty srue I've finished translating the writings on all the tablets you sent me. "
+			InteractionManager.say("Alright so I'm pretty sure I've finished translating the writings on all the tablets you sent me. "
 								 + "The thing is though, you're not going to believe me when I tell you what it says...");
 			InteractionManager.ask("");
 			InteractionManager.say("TO: david.brickson@archeon.org");
@@ -165,7 +165,7 @@ public class Laptop extends DefaultItem{
 							     + "dropped the note INTO THE BLOODY CONDUIT BOX. I was like it's fine the damper is "
 							     + "on, BUT NO APPARENTLY EARLIER I ALSO STUMBLED INTO THAT AND TURNED IT OFF. I guess "
 							     + "that key is stuck in the safe forever now then. I'm gonna put a protective cover "
-							     + "that requires a key on the switch for the damper, so I don't accidentally turn it off"
+							     + "that requires a key on the switch for the damper, so I don't accidentally turn it off "
 							     + "in future.");
 			InteractionManager.ask("");
 			InteractionManager.say("TO: david.brickson@archeon.org");

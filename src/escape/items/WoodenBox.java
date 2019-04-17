@@ -34,7 +34,7 @@ public class WoodenBox extends DefaultItem{
 				InteractionManager.sayBoxed("You place the " + item.getName() + " into the box. There's a flash, you feel a wave of energy "
 										  + "sweep through you, and the " + item.getName() + " dissapears before your "
 										  + "very eyes!");
-				InteractionManager.removeItemFromInventory(this);
+				InteractionManager.removeItemFromInventory(item);
 			}
 			else{
 				InteractionManager.say("You place the item in the box, and nothing happens. After waiting a minute you decide to "
@@ -42,7 +42,7 @@ public class WoodenBox extends DefaultItem{
 			}
 		}
 		else{
-			InteractionManager.say("You try to place the " + item.getName() + "in the box but the box is closed.");
+			InteractionManager.say("You try to place the " + item.getName() + " in the box but the box is closed.");
 		}
 	}
 	
