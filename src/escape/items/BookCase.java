@@ -10,7 +10,7 @@ public class BookCase extends DefaultItem{
 	
 	public BookCase(){
 		name = "bookcase";
-		description = "A large BOOKCASE built into one of the walls of the basement";
+		description = "A large BOOKCASE built into the wall";
 	}
 	
 	@Override

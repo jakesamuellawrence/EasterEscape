@@ -30,6 +30,10 @@ public class InteractionManager{
 		inventory.add(item);
 		current_room.removeItem(item);
 	}
+	
+	public static void removeItemFromInventory(Item item){
+		inventory.remove(item);
+	}
 
 	public static Item findInventoryItemByName(String target_name){
 		for(int i = 0; i < inventory.size(); i++){
