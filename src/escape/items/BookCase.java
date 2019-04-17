@@ -37,21 +37,28 @@ public class BookCase extends DefaultItem{
 		InteractionManager.say("18) The Great Escape");
 		InteractionManager.say("19) Ben-Hur");
 		InteractionManager.say("20) The Night of the Hunter");
+		if(!solved){
+			InteractionManager.say("");
+			String choice = InteractionManager.ask("Would you like to take one of them off the shelf to get a better look?");
+			if(choice.contains("yes")){
+				InteractionManager.say("");
+				use();
+			}
+		}	
 	}
 	
 	@Override
 	public void use(){
 		if(!solved){
-			lookAt();
 			String book = InteractionManager.ask("Which title on the shelves would you like to take?");
-			if(book.equals("10")){
+			if(book.equals("10") || book.toLowerCase().contains("back to the future")){
 				solved = true;
 				InteractionManager.say("You slide the Back to The Future boxset out of the shelf, and hear a click. The entire bookcase begins "
 									 + "to rotate, taking you with it, until eventually you find yourself in a new room entirely.");
 				InteractionManager.switchRoom("lab");
 				InteractionManager.say("");
 				InteractionManager.say("Looking around the new room, it seems to be some sort of laboratory. Machines and blinking lights line "
-									 + "the walls, and wires trail across the floor. Along on wall is a countertop, atop which sits a large "
+									 + "the walls, and wires trail across the floor. Along one wall is a countertop, atop which sits a large "
 									 + "whirring machine labelled 'Conduit Damper'. To the far side of the machine is a switch, encased in "
 									 + "a protective cover, and even further along the counter is a large pile of tools. Embedded into the far "
 									 + "wall is a safe.");
