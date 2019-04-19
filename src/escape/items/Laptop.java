@@ -147,7 +147,9 @@ public class Laptop extends DefaultItem{
 								 + "I run through to the other room and check the box AND THERE'S BLOODY SOMETHING IN THERE THAT WASN'T "
 								 + "THERE BEFORE. At the bottom of the box there's just this big iron key, looks like it came right out "
 								 + "the victorian era (or just some victorian era house I suppose). I've picked it up and put it in the safe "
-								 + "in the secret lab. I'm going to be real I'm bloody terrified but also out of my mind excited.");
+								 + "in the secret lab. I even dropped a pen in there to do a test of my own, and it fucking "
+								 + "DISSPPEARED right in front of me! Just gone, in some other plane of existence now. "
+								 + "I'm going to be real I'm bloody terrified but also out of my mind excited.");
 			InteractionManager.ask("");
 			InteractionManager.say("FROM: david.brickson@archeon.org");
 			InteractionManager.say("SUBJECT: RE: Great Scot! the first test was a success? (sort of...)");
